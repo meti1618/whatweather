@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>whatWeather</title>
+</head>
+<body>
+        <main class="main-content">
+            <h1 class="main-content__logo">What<small class="main-content__logo__dot"></small>Weather</h1>
+            <article class="main-content__weather-info">
+                <h1 id="temp" class="weather-info__Temperature">0°</h1>
+                <div>
+                    <h1 id="city" class="weather-info__city">Dezful</h1>
+                    <div class="weather-info__time">
+                        <small id="time" class="weather-info__time__hour">00:00 -</small>
+                        <small id="data" class="weather-info__time__day"> monday,0 sep `0</small>
+                    </div>
+                </div>
+                <div class="weather-info__conditions">
+                    <img id="icon" class="weather-info__conditions__icon" src=" http://openweathermap.org/img/wn/10d@2x.png" alt="openweathermap">
+                    <small id="icon-status" class="weather-info__conditions__status">Cloudy</small>
+                </div>
+            </article>
+        </main>
+        <aside class="aside-content">
+            <header class="aside-content__header">
+                <h2 class="aside-content__header__city-title">famous city</h2>
+                <button class="aside-content__header__search-btn"><img src="./search_icon.png" alt=""></button>
+                <input class="aside-content__header__search-input form-control" type="search" id="city">
+            </header>
+            <ul class="asice-content__famous-citys">
+                <li class="asice-content__famous-citys__city">Tehran</li>
+                <li class="asice-content__famous-citys__city">Shiraz</li>
+                <li class="asice-content__famous-citys__city">New York</li>
+                <li class="asice-content__famous-citys__city">London</li>
+            </ul>
+            <h2 class="aside-content__weather-info-title">Weather Datails</h2>
+            <ul class="aside-content__weather-infos">
+                <li class="aside-content__weather-infos__info">
+                    <h3 class="aside-content__weather-infos__info__title">Cloudy</h3>
+                    <span id="cloudyRange" class="aside-content__weather-infos__info__value">13%</span>
+                </li>                
+                <li class="aside-content__weather-infos__info">
+                    <h3 class="aside-content__weather-infos__info__title">Humiditiy</h3>
+                    <span id="humiditiyRange" class="aside-content__weather-infos__info__value">73%</span>
+                </li>                
+                <li class="aside-content__weather-infos__info">
+                    <h3 class="aside-content__weather-infos__info__title">Wind</h3>
+                    <span id="windRange" class="aside-content__weather-infos__info__value">1km/h</span>
+                </li>                
+                <li class="aside-content__weather-infos__info">
+                    <h3 id="fallType" class="aside-content__weather-infos__info__title"></h3>
+                    <span id="fallRange" class="aside-content__weather-infos__info__value"></span>
+                </li>
+            </ul>
+        </aside>
+
+
+    <section class="alert">city not define please check your text</section>
+    <script src="./weather-script.js"></script>
+</body>
+</html>
